@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Garden - Indian Restaurant | Yavatmal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                <span>Spice Garden</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booking">Book Table</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Spice Garden</h1>
+            <p>Authentic Indian Cuisine in the Heart of Yavatmal</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Book a Table</a>
+                <a href="#menu" class="btn btn-secondary">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="spice-decoration"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Experience the Rich Flavors of India</h2>
+                    <p>Located in the beautiful city of Yavatmal, Spice Garden brings you the authentic taste of traditional Indian cuisine. Our skilled chefs use age-old recipes and the finest spices to create dishes that will transport you to the heart of India.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Fresh Ingredients</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <span>Authentic Spices</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="menu-btn active" data-category="appetizers">Appetizers</button>
+                <button class="menu-btn" data-category="main-course">Main Course</button>
+                <button class="menu-btn" data-category="desserts">Desserts</button>
+                <button class="menu-btn" data-category="beverages">Beverages</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-category active" id="appetizers">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Samosas</h3>
+                            <p>Crispy pastries filled with spiced potatoes and peas</p>
+                        </div>
+                        <span class="price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Chicken Tikka</h3>
+                            <p>Marinated chicken pieces grilled to perfection</p>
+                        </div>
+                        <span class="price">₹180</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Paneer Pakora</h3>
+                            <p>Deep-fried cottage cheese fritters with spices</p>
+                        </div>
+                        <span class="price">₹120</span>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-category" id="main-course">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Butter Chicken</h3>
+                            <p>Rich and creamy tomato-based curry with tender chicken</p>
+                        </div>
+                        <span class="price">₹280</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Dal Makhani</h3>
+                            <p>Slow-cooked black lentils with butter and cream</p>
+                        </div>
+                        <span class="price">₹200</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Biryani</h3>
+                            <p>Fragrant basmati rice with spiced meat and vegetables</p>
+                        </div>
+                        <span class="price">₹320</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Palak Paneer</h3>
+                            <p>Cottage cheese in creamy spinach gravy</p>
+                        </div>
+                        <span class="price">₹220</span>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Gulab Jamun</h3>
+                            <p>Soft milk dumplings in rose-flavored syrup</p>
+                        </div>
+                        <span class="price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Kheer</h3>
+                            <p>Traditional rice pudding with nuts and cardamom</p>
+                        </div>
+                        <span class="price">₹90</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Ras Malai</h3>
+                            <p>Soft cottage cheese balls in sweetened milk</p>
+                        </div>
+                        <span class="price">₹100</span>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category" id="beverages">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Mango Lassi</h3>
+                            <p>Refreshing yogurt drink with fresh mango</p>
+                        </div>
+                        <span class="price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Masala Chai</h3>
+                            <p>Traditional spiced tea with milk</p>
+                        </div>
+                        <span class="price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Fresh Lime Soda</h3>
+                            <p>Cooling lime drink with mint and spices</p>
+                        </div>
+                        <span class="price">₹50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Table</h2>
+            <div class="booking-form-container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="14:30">2:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:30">9:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests (Optional)</label>
+                        <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any special dietary requirements or requests..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">Book Table</button>
+                </form>
+                
+                <div class="booking-info">
+                    <h3>Restaurant Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address</strong>
+                            <p>darwha road<br>Yavatmal, Maharashtra 445001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 8459540146</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours</strong>
+                            <p>Mon-Sun: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p>Experience the authentic taste of India at Spice Garden, located in the heart of Yavatmal. We're committed to providing you with the finest Indian cuisine in a warm and welcoming atmosphere.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Darwha road, Yavatmal, Maharashtra 445001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8459540146</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@spicegarden-yavatmal.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map<br>Yavatmal, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Spice Garden</h3>
+                    <p>Authentic Indian Cuisine in Yavatmal</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#booking">Book Table</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> darwha road, Yavatmal</p>
+                    <p><i class="fas fa-phone"></i> +91 8459540146</p>
+                    <p><i class="fas fa-envelope"></i> info@spicegarden-yavatmal.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Opening Hours</h4>
+                    <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
+                    <p>Last Order: 10:30 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spice Garden, Yavatmal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
